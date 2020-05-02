@@ -1,8 +1,8 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import React from 'react'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
-import EmptyPage from './pages/EmptyPage';
-import Page from './pages/Page';
+import EmptyPage from './pages/EmptyPage'
+import Page from './pages/Page'
 
 const Routes = () => (
   <Router>
@@ -13,4 +13,4 @@ const Routes = () => (
   </Router>
 )
 
-export default Routes;
+export default Routes
