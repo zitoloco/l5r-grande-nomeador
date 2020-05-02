@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import EmptyPage from './EmptyPage';
-import Page from './Page';
+import EmptyPage from './pages/EmptyPage';
+import Page from './pages/Page';
 
 const Routes = () => (
   <Router>

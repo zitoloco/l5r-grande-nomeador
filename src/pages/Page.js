@@ -1,9 +1,9 @@
 import React from 'react';
-import pickOne from './helpers/pickOne';
+import pickOne from '../helpers/pickOne';
 
-import maleNames from './config/maleNames';
+import maleNames from '../config/maleNames';
 
-import Nav from './components/Nav'
+import Nav from '../components/Nav'
 
 function Page({ match }) {
 
