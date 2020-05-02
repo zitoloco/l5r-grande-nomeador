@@ -1,0 +1,39 @@
+
+{
+  "table_a": [
+    "kona",
+    "aya",
+    "rai",
+    "yashi",
+    "sati",
+    "kazu",
+    "kei",
+    "nana",
+    "miya",
+    "yasu"
+  ],
+  "table_b": [
+    "tsu",
+    "yo",
+    "hika",
+    "ryo",
+    "mitsu",
+    "sad",
+    "aza",
+    "momo",
+    "hi",
+    "natsu"
+  ],
+  "suffix": [
+    "mi",
+    "ko",
+    "ri",
+    "ke",
+    "na",
+    "to",
+    "yo",
+    "sa",
+    "me",
+    "ye"
+  ]
+}

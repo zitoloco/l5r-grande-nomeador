@@ -2,19 +2,29 @@
 import React from 'react'
 import styled from 'styled-components'
 import pickOne from '../helpers/pickOne'
+import families from '../config/families'
 import maleNames from '../config/maleNames'
+import femaleNames from '../config/femaleNames'
 import Nav from '../components/Nav'
 
 function Page ({ match }) {
-  let name = 'Selecione uma familia acima'
+  let family
+  let maleName = 'Selecione uma familia acima'
+  let femaleName
   let familyName
   if (match.params.family) {
-    const allPrefix = [...maleNames.table_a, ...maleNames.table_b]
-    const prefix = pickOne(allPrefix)
-    const suffix = pickOne(maleNames.suffix)
+    const allMalePrefix = [...maleNames.table_a, ...maleNames.table_b]
+    const malePrefix = pickOne(allMalePrefix)
+    const maleSuffix = pickOne(maleNames.suffix)
+    maleName = `masculino: ${malePrefix}${maleSuffix}`
+
+    const allFemalePrefix = [...femaleNames.table_a, ...femaleNames.table_b]
+    const femalePrefix = pickOne(allFemalePrefix)
+    const femaleSuffix = pickOne(femaleNames.suffix)
+    femaleName = `feminino: ${femalePrefix}${femaleSuffix}`
+
     familyName = match.params.family
-    const family = pickOne(maleNames[familyName])
-    name = `${prefix}${suffix} ${family}`
+    family = `família: ${pickOne(families[familyName])}`
   }
 
   const Name = styled.div`
@@ -25,14 +35,17 @@ function Page ({ match }) {
     font-weight: 600;
     text-align: center;
     line-height: 1.125;
-    padding: 3rem 1.5rem;
+    padding: 16px 0;
+    margin: 10px 0;
     text-transform: capitalize;
   `
 
   return (
     <section>
       <Nav activeFamily={match.params.family} />
-      <Name>{name}</Name>
+      <Name>{maleName}</Name>
+      <Name>{femaleName}</Name>
+      <Name>{family}</Name>
     </section>
   )
 }
