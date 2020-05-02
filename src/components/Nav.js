@@ -5,8 +5,7 @@ import styled from 'styled-components'
 import device from '../config/device'
 
 function Nav (props) {
-  const family = props.activeFamily
-
+  const familyName = props.activeFamily
   const links = [
     { name: 'caranguejo', url: 'caranguejo' },
     { name: 'dragão', url: 'dragao' },
@@ -76,17 +75,13 @@ function Nav (props) {
   `
 
   return (
-    <div className="buttons is-centered familias">
+    <Container>
       {links.map((link) => (
-        <Link
-          key={link.url}
-          className={family === link.url ? `button is-small ${family}` : 'button is-small'}
-          to={link.url}
-        >
+        <CustomLink key={link.url} className={link.url === familyName ? familyName : ''} to={link.url}>
           {link.name}
-        </Link>
+        </CustomLink>
       ))}
-    </div>
+    </Container>
   )
 }
 
