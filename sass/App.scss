@@ -1,6 +1,56 @@
 @charset "utf-8";
+
+$caranguejo: #de2322;
+$dragao: #1bb21b;
+$escorpiao: #de2322;
+$fenix: #de2322;
+$garca: #69a7e8;
+$leao: #dec022;
+$louva-a-deus: #82c98a;
+$unicornio: #9f77eb;
+
 @import "../node_modules/bulma/bulma.sass";
 
 .familias {
   padding: 40px 0 20px 0;
+}
+
+.caranguejo, .caranguejo h1 {
+  background-color: $caranguejo;
+  color: $white !important;
+}
+
+.dragao, .dragao h1 {
+  background-color: $dragao;
+  color: #f1e8ac !important;
+}
+
+.escorpiao, .escorpiao h1 {
+  background-color: $escorpiao;
+  color: #f1e8ac !important;
+}
+
+.fenix, .fenix h1 {
+  background-color: $black;
+  color: $fenix !important;
+}
+
+.garca, .garca h1 {
+  background-color: $garca;
+  color: $white !important;
+}
+
+.leao, .leao h1 {
+  background-color: $leao;
+  color: $white !important;
+}
+
+.louva-a-deus, .louva-a-deus h1 {
+  background-color: $louva-a-deus;
+  color: $white !important;
+}
+
+.unicornio, .unicornio h1 {
+  background-color: $unicornio;
+  color: $white !important;
 }

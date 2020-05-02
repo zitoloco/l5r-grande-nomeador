@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 import Nav from '../components/Nav'
 
@@ -21,4 +21,4 @@ function EmptyPage() {
   );
 }
 
-export default EmptyPage;
+export default EmptyPage

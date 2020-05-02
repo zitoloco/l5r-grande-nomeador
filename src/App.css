@@ -7115,3 +7115,35 @@ label.panel-block {
 
 .familias {
   padding: 40px 0 20px 0; }
+
+.caranguejo, .caranguejo h1 {
+  background-color: #de2322;
+  color: white !important; }
+
+.dragao, .dragao h1 {
+  background-color: #1bb21b;
+  color: #f1e8ac !important; }
+
+.escorpiao, .escorpiao h1 {
+  background-color: #de2322;
+  color: #f1e8ac !important; }
+
+.fenix, .fenix h1 {
+  background-color: #0a0a0a;
+  color: #de2322 !important; }
+
+.garca, .garca h1 {
+  background-color: #69a7e8;
+  color: white !important; }
+
+.leao, .leao h1 {
+  background-color: #dec022;
+  color: white !important; }
+
+.louva-a-deus, .louva-a-deus h1 {
+  background-color: #82c98a;
+  color: white !important; }
+
+.unicornio, .unicornio h1 {
+  background-color: #9f77eb;
+  color: white !important; }

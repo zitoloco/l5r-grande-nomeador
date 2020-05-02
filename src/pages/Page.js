@@ -1,23 +1,26 @@
-import React from 'react';
-import pickOne from '../helpers/pickOne';
+/* eslint-disable react/prop-types */
+import React from 'react'
+import pickOne from '../helpers/pickOne'
 
-import maleNames from '../config/maleNames';
+import maleNames from '../config/maleNames'
 
 import Nav from '../components/Nav'
 
-function Page({ match }) {
+function Page ({ match }) {
+  const allPrefix = [...maleNames.table_a, ...maleNames.table_b]
+  const prefix = pickOne(allPrefix)
+  const suffix = pickOne(maleNames.suffix)
+  const familyName = match.params.family
+  const family = pickOne(maleNames[familyName])
 
-  const allPrefix = [...maleNames['table_a'], ...maleNames['table_b']];
-  const prefix = pickOne(allPrefix);
-  const suffix = pickOne(maleNames['suffix']);
-  const family = pickOne(maleNames[match.params.family]);
+  const name = `${prefix}${suffix} ${family}`
 
-  const name =`${prefix}${suffix} ${family}`;
-    
+  const familyClass = `hero ${familyName}`
+
   return (
     <section>
       <Nav activeFamily={match.params.family} />
-      <section className="hero is-primary">
+      <section className={familyClass}>
         <div className="container">
           <div className="hero-body">
             <div className="container">
@@ -27,7 +30,7 @@ function Page({ match }) {
         </div>
       </section>
     </section>
-  );
+  )
 }
 
-export default Page;
+export default Page
