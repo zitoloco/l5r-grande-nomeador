@@ -10,16 +10,14 @@
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
-    "rpg-dice-roller": "^4.0.3"
+    "styled-components": "^5.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "eslint": "eslint src/*.js",
-    "css-build": "node-sass --omit-source-map-url sass/App.scss src/App.css",
-    "css-watch": "npm run css-build -- --watch"
+    "eslint": "eslint src/*.js"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -37,14 +35,12 @@
     ]
   },
   "devDependencies": {
-    "bulma": "^0.8.2",
     "eslint": "^6.8.0",
     "eslint-config-standard": "^14.1.1",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.19.0",
-    "eslint-plugin-standard": "^4.0.1",
-    "node-sass": "^4.14.0"
+    "eslint-plugin-standard": "^4.0.1"
   }
 }
