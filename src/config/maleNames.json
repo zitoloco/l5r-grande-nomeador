@@ -1,0 +1,90 @@
+{
+  "table_a": [
+    "aki",
+    "fumi",
+    "ta",
+    "masa",
+    "michi",
+    "ryu",
+    "taka",
+    "shin",
+    "kazu",
+    "toshi"
+  ],
+  "table_b": [
+    "toshi",
+    "kita",
+    "su",
+    "noria",
+    "shige",
+    "nobu",
+    "mana",
+    "hide",
+    "shu",
+    "yu"
+  ],
+  "suffix": [
+    "hiko",
+    "suke",
+    "ki",
+    "shi",
+    "o",
+    "ichi",
+    "shi",
+    "haru",
+    "bu",
+    "sumi"
+  ],
+  "caranguejo": [
+    "hida",
+    "hiruma",
+    "kaiu",
+    "kuni",
+    "toritaka",
+    "yasuki"
+  ],
+  "garca": [
+    "asahina",
+    "daidoji",
+    "doji",
+    "kakita"
+  ],
+  "dragao": [
+    "kitsuki",
+    "mirumoto", 
+    "tamori", 
+    "togashi"
+  ],
+  "leao": [
+    "akodo", 
+    "ikoma", 
+    "kitsu", 
+    "matsu"
+  ],
+  "louva-a-deus": [
+    "kitsuke",
+    "moshi",
+    "tsuruchi",
+    "yoritomo"
+  ],
+  "fenix": [
+    "agasha",
+    "asako",
+    "isawa",
+    "shiba"
+  ],
+  "escorpiao": [
+    "bayushi",
+    "shosuro",
+    "soshi",
+    "yogo"
+  ],
+  "unicornio": [
+    "horiuchi",
+    "ide",
+    "iuchi",
+    "moto",
+    "shinjo",
+    "utaku"
+  ]
+}
