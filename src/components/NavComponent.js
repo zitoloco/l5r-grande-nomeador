@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import device from '../config/device'
 
-function Nav (props) {
+function NavComponent (props) {
   const familyName = props.activeFamily
   const links = [
     { name: 'caranguejo', url: 'caranguejo' },
@@ -85,4 +85,4 @@ function Nav (props) {
   )
 }
 
-export default Nav
+export default NavComponent
